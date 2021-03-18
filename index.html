@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css">
+  <link rel="stylesheet" href="styles.css" />
+
+  <title>Task w/o Bootstrap</title>
+</head>
+
+<body id="body">
+  <div class="container">
+    <nav class="navbar">
+      <div class="nav_icon" onclick="toggleSidebar()">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+      </div>
+      <div class="navbar__left">
+        <a href="#">Dashboard</a>
+      </div>
+      <div class="navbar__right">
+        <a href="#">
+          <i class="fa fa-search" aria-hidden="true"></i>
+        </a>
+        <a href="#">
+          <i class="fa fa-bell-o" aria-hidden="true"></i>
+        </a>
+        <a href="#">
+          <i class="fa fa-cog" aria-hidden="true"></i>
+        </a>
+        <a href="#">
+          <i class="fa fa-power-off" aria-hidden="true"></i>
+        </a>
+      </div>
+    </nav>
+
+    <main>
+      <!-- Table Starts -->
+      <section class="table_part">
+        <table id="example" class="display" style="width:100%">
+          <thead>
+            <tr>
+              <th>Cargo Id</th>
+              <th>Material</th>
+              <th>Cargo</th>
+              <th>Shipper</th>
+              <th>Quantity</th>
+              <th>Last Update</th>
+              <th>Edit</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-column="datum1">1070/CP01/020293</td>
+              <td data-column="datum2">Charcol</td>
+              <td data-column="datum3">Anthracite Coal</td>
+              <td data-column="datum4">Adani Enterprise LTD</td>
+              <td data-column="datum5">11</td>
+              <td data-column="datum6">27-11-2020</td>
+              <td data-column="datum7">
+                <a href="#"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-trash" aria-hidden="true"></i></a>
+              </td>
+            </tr>
+            <tr>
+              <td data-column="datum1">1070/CP01/020294</td>
+              <td data-column="datum2">Charcol</td>
+              <td data-column="datum3">Anthracite Coal</td>
+              <td data-column="datum4">Adani Enterprise LTD</td>
+              <td data-column="datum5">10</td>
+              <td data-column="datum6">27-11-2020</td>
+              <td data-column="datum7">
+                <a href="#"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-trash" aria-hidden="true"></i></a>
+              </td>
+            </tr>
+            <tr>
+              <td data-column="datum1">1070/CP01/020293</td>
+              <td data-column="datum2">Charcol</td>
+              <td data-column="datum3">Anthracite Coal</td>
+              <td data-column="datum4">Adani Enterprise LTD</td>
+              <td data-column="datum5">10</td>
+              <td data-column="datum6">27-11-2020</td>
+              <td data-column="datum7">
+                <a href="#"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-trash" aria-hidden="true"></i></a>
+              </td>
+            </tr>
+            <tr>
+              <td data-column="datum1">1070/CP01/020293</td>
+              <td data-column="datum2">Charcol</td>
+              <td data-column="datum3">Anthracite Coal</td>
+              <td data-column="datum4">Adani Enterprise LTD</td>
+              <td data-column="datum5">10</td>
+              <td data-column="datum6">27-11-2020</td>
+              <td data-column="datum7">
+                <a href="#"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-trash" aria-hidden="true"></i></a>
+              </td>
+            </tr>
+            <tr>
+              <td data-column="datum1">1070/CP01/020293</td>
+              <td data-column="datum2">Charcol</td>
+              <td data-column="datum3">Anthracite Coal</td>
+              <td data-column="datum4">Adani Enterprise LTD</td>
+              <td data-column="datum5">10</td>
+              <td data-column="datum6">27-11-2020</td>
+              <td data-column="datum7">
+                <a href="#"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-trash" aria-hidden="true"></i></a>
+              </td>
+            </tr>
+            <tr>
+              <td data-column="datum1">1070/CP01/020293</td>
+              <td data-column="datum2">Charcol</td>
+              <td data-column="datum3">Anthracite Coal</td>
+              <td data-column="datum4">Adani Enterprise LTD</td>
+              <td data-column="datum5">10</td>
+              <td data-column="datum6">27-11-2020</td>
+              <td data-column="datum7">
+                <a href="#"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-trash" aria-hidden="true"></i></a>
+              </td>
+            </tr>
+            <tr>
+              <td data-column="datum1">1070/CP01/020293</td>
+              <td data-column="datum2">Charcol</td>
+              <td data-column="datum3">Anthracite Coal</td>
+              <td data-column="datum4">Adani Enterprise LTD</td>
+              <td data-column="datum5">10</td>
+              <td data-column="datum6">27-11-2020</td>
+              <td data-column="datum7">
+                <a href="#"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-trash" aria-hidden="true"></i></a>
+              </td>
+            </tr>
+            <tr>
+              <td data-column="datum1">1070/CP01/020293</td>
+              <td data-column="datum2">Charcol</td>
+              <td data-column="datum3">Anthracite Coal</td>
+              <td data-column="datum4">Adani Enterprise LTD</td>
+              <td data-column="datum5">10</td>
+              <td data-column="datum6">27-11-2020</td>
+              <td data-column="datum7">
+                <a href="#"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-trash" aria-hidden="true"></i></a>
+              </td>
+            </tr>
+            <tr>
+              <td data-column="datum1">1070/CP01/020293</td>
+              <td data-column="datum2">Charcol</td>
+              <td data-column="datum3">Anthracite Coal</td>
+              <td data-column="datum4">Adani Enterprise LTD</td>
+              <td data-column="datum5">10</td>
+              <td data-column="datum6">27-11-2020</td>
+              <td data-column="datum7">
+                <a href="#"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-trash" aria-hidden="true"></i></a>
+              </td>
+            </tr>
+            <tr>
+              <td data-column="datum1">1070/CP01/020293</td>
+              <td data-column="datum2">Charcol</td>
+              <td data-column="datum3">Anthracite Coal</td>
+              <td data-column="datum4">Adani Enterprise LTD</td>
+              <td data-column="datum5">10</td>
+              <td data-column="datum6">27-11-2020</td>
+              <td data-column="datum7">
+                <a href="#"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-trash" aria-hidden="true"></i></a>
+              </td>
+            </tr>
+            <tr>
+              <td data-column="datum1">1070/CP01/020293</td>
+              <td data-column="datum2">Charcol</td>
+              <td data-column="datum3">Anthracite Coal</td>
+              <td data-column="datum4">Adani Enterprise LTD</td>
+              <td data-column="datum5">10</td>
+              <td data-column="datum6">27-11-2020</td>
+              <td data-column="datum7">
+                <a href="#"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-trash" aria-hidden="true"></i></a>
+              </td>
+            </tr>
+            <tr>
+              <td data-column="datum1">1070/CP01/020293</td>
+              <td data-column="datum2">Charcol</td>
+              <td data-column="datum3">Anthracite Coal</td>
+              <td data-column="datum4">Adani Enterprise LTD</td>
+              <td data-column="datum5">10</td>
+              <td data-column="datum6">27-11-2020</td>
+              <td data-column="datum7">
+                <a href="#"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-trash" aria-hidden="true"></i></a>
+              </td>
+            </tr>
+            <tr>
+              <td data-column="datum1">1070/CP01/020293</td>
+              <td data-column="datum2">Charcol</td>
+              <td data-column="datum3">Anthracite Coal</td>
+              <td data-column="datum4">Adani Enterprise LTD</td>
+              <td data-column="datum5">10</td>
+              <td data-column="datum6">27-11-2020</td>
+              <td data-column="datum7">
+                <a href="#"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-trash" aria-hidden="true"></i></a>
+              </td>
+            </tr>
+            <tr>
+              <td data-column="datum1">1070/CP01/020293</td>
+              <td data-column="datum2">Charcol</td>
+              <td data-column="datum3">Anthracite Coal</td>
+              <td data-column="datum4">Adani Enterprise LTD</td>
+              <td data-column="datum5">10</td>
+              <td data-column="datum6">27-11-2020</td>
+              <td data-column="datum7">
+                <a href="#"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-trash" aria-hidden="true"></i></a>
+              </td>
+            </tr>
+            <tr>
+              <td data-column="datum1">1070/CP01/020293</td>
+              <td data-column="datum2">Charcol</td>
+              <td data-column="datum3">Anthracite Coal</td>
+              <td data-column="datum4">Adani Enterprise LTD</td>
+              <td data-column="datum5">10</td>
+              <td data-column="datum6">27-11-2020</td>
+              <td data-column="datum7">
+                <a href="#"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-trash" aria-hidden="true"></i></a>
+              </td>
+            </tr>
+            <tr>
+              <td data-column="datum1">1070/CP01/020293</td>
+              <td data-column="datum2">Charcol</td>
+              <td data-column="datum3">Anthracite Coal</td>
+              <td data-column="datum4">Adani Enterprise LTD</td>
+              <td data-column="datum5">10</td>
+              <td data-column="datum6">27-11-2020</td>
+              <td data-column="datum7">
+                <a href="#"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-trash" aria-hidden="true"></i></a>
+              </td>
+            </tr>
+            <tr>
+              <td data-column="datum1">1070/CP01/020293</td>
+              <td data-column="datum2">Charcol</td>
+              <td data-column="datum3">Anthracite Coal</td>
+              <td data-column="datum4">Adani Enterprise LTD</td>
+              <td data-column="datum5">10</td>
+              <td data-column="datum6">27-11-2020</td>
+              <td data-column="datum7">
+                <a href="#"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-trash" aria-hidden="true"></i></a>
+              </td>
+            </tr>
+            <tr>
+              <td data-column="datum1">1070/CP01/020293</td>
+              <td data-column="datum2">Charcol</td>
+              <td data-column="datum3">Anthracite Coal</td>
+              <td data-column="datum4">Adani Enterprise LTD</td>
+              <td data-column="datum5">10</td>
+              <td data-column="datum6">27-11-2020</td>
+              <td data-column="datum7">
+                <a href="#"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-trash" aria-hidden="true"></i></a>
+              </td>
+            </tr>
+            <tr>
+              <td data-column="datum1">1070/CP01/020293</td>
+              <td data-column="datum2">Charcol</td>
+              <td data-column="datum3">Anthracite Coal</td>
+              <td data-column="datum4">Adani Enterprise LTD</td>
+              <td data-column="datum5">10</td>
+              <td data-column="datum6">27-11-2020</td>
+              <td data-column="datum7">
+                <a href="#"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-trash" aria-hidden="true"></i></a>
+              </td>
+            </tr>
+            <tr>
+              <td data-column="datum1">1070/CP01/020293</td>
+              <td data-column="datum2">Charcol</td>
+              <td data-column="datum3">Anthracite Coal</td>
+              <td data-column="datum4">Adani Enterprise LTD</td>
+              <td data-column="datum5">10</td>
+              <td data-column="datum6">27-11-2020</td>
+              <td data-column="datum7">
+                <a href="#"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-trash" aria-hidden="true"></i></a>
+              </td>
+            </tr>
+            <tr>
+              <td data-column="datum1">1070/CP01/020293</td>
+              <td data-column="datum2">Charcol</td>
+              <td data-column="datum3">Anthracite Coal</td>
+              <td data-column="datum4">Adani Enterprise LTD</td>
+              <td data-column="datum5">10</td>
+              <td data-column="datum6">27-11-2020</td>
+              <td data-column="datum7">
+                <a href="#"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-trash" aria-hidden="true"></i></a>
+              </td>
+            </tr>
+            <tr>
+              <td data-column="datum1">1070/CP01/020293</td>
+              <td data-column="datum2">Charcol</td>
+              <td data-column="datum3">Anthracite Coal</td>
+              <td data-column="datum4">Adani Enterprise LTD</td>
+              <td data-column="datum5">10</td>
+              <td data-column="datum6">27-11-2020</td>
+              <td data-column="datum7">
+                <a href="#"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-trash" aria-hidden="true"></i></a>
+              </td>
+            </tr>
+            <tr>
+              <td data-column="datum1">1070/CP01/020293</td>
+              <td data-column="datum2">Charcol</td>
+              <td data-column="datum3">Anthracite Coal</td>
+              <td data-column="datum4">Adani Enterprise LTD</td>
+              <td data-column="datum5">10</td>
+              <td data-column="datum6">27-11-2020</td>
+              <td data-column="datum7">
+                <a href="#"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-trash" aria-hidden="true"></i></a>
+              </td>
+            </tr>
+            <tr>
+              <td data-column="datum1">1070/CP01/020293</td>
+              <td data-column="datum2">Charcol</td>
+              <td data-column="datum3">Anthracite Coal</td>
+              <td data-column="datum4">Adani Enterprise LTD</td>
+              <td data-column="datum5">10</td>
+              <td data-column="datum6">27-11-2020</td>
+              <td data-column="datum7">
+                <a href="#"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-trash" aria-hidden="true"></i></a>
+              </td>
+            </tr>
+            <tr>
+              <td data-column="datum1">1070/CP01/020293</td>
+              <td data-column="datum2">Charcol</td>
+              <td data-column="datum3">Anthracite Coal</td>
+              <td data-column="datum4">Adani Enterprise LTD</td>
+              <td data-column="datum5">10</td>
+              <td data-column="datum6">27-11-2020</td>
+              <td data-column="datum7">
+                <a href="#"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-trash" aria-hidden="true"></i></a>
+              </td>
+            </tr>
+            <tr>
+              <td data-column="datum1">1070/CP01/020293</td>
+              <td data-column="datum2">Charcol</td>
+              <td data-column="datum3">Anthracite Coal</td>
+              <td data-column="datum4">Adani Enterprise LTD</td>
+              <td data-column="datum5">10</td>
+              <td data-column="datum6">27-11-2020</td>
+              <td data-column="datum7">
+                <a href="#"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-trash" aria-hidden="true"></i></a>
+              </td>
+            </tr>
+            <tr>
+              <td data-column="datum1">1070/CP01/020293</td>
+              <td data-column="datum2">Charcol</td>
+              <td data-column="datum3">Anthracite Coal</td>
+              <td data-column="datum4">Adani Enterprise LTD</td>
+              <td data-column="datum5">10</td>
+              <td data-column="datum6">27-11-2020</td>
+              <td data-column="datum7">
+                <a href="#"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-trash" aria-hidden="true"></i></a>
+              </td>
+            </tr>
+            <tr>
+              <td data-column="datum1">1070/CP01/020293</td>
+              <td data-column="datum2">Charcol</td>
+              <td data-column="datum3">Anthracite Coal</td>
+              <td data-column="datum4">Adani Enterprise LTD</td>
+              <td data-column="datum5">10</td>
+              <td data-column="datum6">27-11-2020</td>
+              <td data-column="datum7">
+                <a href="#"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-trash" aria-hidden="true"></i></a>
+              </td>
+            </tr>
+            <tr>
+              <td data-column="datum1">1070/CP01/020293</td>
+              <td data-column="datum2">Charcol</td>
+              <td data-column="datum3">Anthracite Coal</td>
+              <td data-column="datum4">Adani Enterprise LTD</td>
+              <td data-column="datum5">10</td>
+              <td data-column="datum6">27-11-2020</td>
+              <td data-column="datum7">
+                <a href="#"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-trash" aria-hidden="true"></i></a>
+              </td>
+            </tr>
+            <tr>
+              <td data-column="datum1">1070/CP01/020293</td>
+              <td data-column="datum2">Charcol</td>
+              <td data-column="datum3">Anthracite Coal</td>
+              <td data-column="datum4">Adani Enterprise LTD</td>
+              <td data-column="datum5">10</td>
+              <td data-column="datum6">27-11-2020</td>
+              <td data-column="datum7">
+                <a href="#"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-trash" aria-hidden="true"></i></a>
+              </td>
+            </tr>
+            <tr>
+              <td data-column="datum1">1070/CP01/020293</td>
+              <td data-column="datum2">Charcol</td>
+              <td data-column="datum3">Anthracite Coal</td>
+              <td data-column="datum4">Adani Enterprise LTD</td>
+              <td data-column="datum5">10</td>
+              <td data-column="datum6">27-11-2020</td>
+              <td data-column="datum7">
+                <a href="#"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-trash" aria-hidden="true"></i></a>
+              </td>
+            </tr>
+            <tr>
+              <td data-column="datum1">1070/CP01/020293</td>
+              <td data-column="datum2">Charcol</td>
+              <td data-column="datum3">Anthracite Coal</td>
+              <td data-column="datum4">Adani Enterprise LTD</td>
+              <td data-column="datum5">10</td>
+              <td data-column="datum6">27-11-2020</td>
+              <td data-column="datum7">
+                <a href="#"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-trash" aria-hidden="true"></i></a>
+              </td>
+            </tr>
+            <tr>
+              <td data-column="datum1">1070/CP01/020293</td>
+              <td data-column="datum2">Charcol</td>
+              <td data-column="datum3">Anthracite Coal</td>
+              <td data-column="datum4">Adani Enterprise LTD</td>
+              <td data-column="datum5">10</td>
+              <td data-column="datum6">27-11-2020</td>
+              <td data-column="datum7">
+                <a href="#"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-trash" aria-hidden="true"></i></a>
+              </td>
+            </tr>
+            <tr>
+              <td data-column="datum1">1070/CP01/020293</td>
+              <td data-column="datum2">Charcol</td>
+              <td data-column="datum3">Anthracite Coal</td>
+              <td data-column="datum4">Adani Enterprise LTD</td>
+              <td data-column="datum5">10</td>
+              <td data-column="datum6">27-11-2020</td>
+              <td data-column="datum7">
+                <a href="#"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-trash" aria-hidden="true"></i></a>
+              </td>
+            </tr>
+            <tr>
+              <td data-column="datum1">1070/CP01/020293</td>
+              <td data-column="datum2">Charcol</td>
+              <td data-column="datum3">Anthracite Coal</td>
+              <td data-column="datum4">Adani Enterprise LTD</td>
+              <td data-column="datum5">10</td>
+              <td data-column="datum6">27-11-2020</td>
+              <td data-column="datum7">
+                <a href="#"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-trash" aria-hidden="true"></i></a>
+              </td>
+            </tr>
+            <tr>
+              <td data-column="datum1">1070/CP01/020293</td>
+              <td data-column="datum2">Charcol</td>
+              <td data-column="datum3">Anthracite Coal</td>
+              <td data-column="datum4">Adani Enterprise LTD</td>
+              <td data-column="datum5">10</td>
+              <td data-column="datum6">27-11-2020</td>
+              <td data-column="datum7">
+                <a href="#"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-trash" aria-hidden="true"></i></a>
+              </td>
+            </tr>
+            <tr>
+              <td data-column="datum1">1070/CP01/020293</td>
+              <td data-column="datum2">Charcol</td>
+              <td data-column="datum3">Anthracite Coal</td>
+              <td data-column="datum4">Adani Enterprise LTD</td>
+              <td data-column="datum5">10</td>
+              <td data-column="datum6">27-11-2020</td>
+              <td data-column="datum7">
+                <a href="#"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-trash" aria-hidden="true"></i></a>
+              </td>
+            </tr>
+            <tr>
+              <td data-column="datum1">1070/CP01/020293</td>
+              <td data-column="datum2">Charcol</td>
+              <td data-column="datum3">Anthracite Coal</td>
+              <td data-column="datum4">Adani Enterprise LTD</td>
+              <td data-column="datum5">10</td>
+              <td data-column="datum6">27-11-2020</td>
+              <td data-column="datum7">
+                <a href="#"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-trash" aria-hidden="true"></i></a>
+              </td>
+            </tr>
+            <tr>
+              <td data-column="datum1">1070/CP01/020293</td>
+              <td data-column="datum2">Charcol</td>
+              <td data-column="datum3">Anthracite Coal</td>
+              <td data-column="datum4">Adani Enterprise LTD</td>
+              <td data-column="datum5">10</td>
+              <td data-column="datum6">27-11-2020</td>
+              <td data-column="datum7">
+                <a href="#"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-trash" aria-hidden="true"></i></a>
+              </td>
+            </tr>
+            <tr>
+              <td data-column="datum1">1070/CP01/020293</td>
+              <td data-column="datum2">Charcol</td>
+              <td data-column="datum3">Anthracite Coal</td>
+              <td data-column="datum4">Adani Enterprise LTD</td>
+              <td data-column="datum5">10</td>
+              <td data-column="datum6">27-11-2020</td>
+              <td data-column="datum7">
+                <a href="#"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-trash" aria-hidden="true"></i></a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+
+    <div id="sidebar">
+      <div class="sidebar__title">
+        <div class="sidebar__img">
+          <h1 class="text-center">LSS Ocean <br>
+            Transport DMCC</h1>
+          <img src="assets/user.jpg" alt="logo" />
+          <h1>Welcome DS,</h1>
+          <small>COD - Charter in Seven <br>
+            Oceans Logistics</small>
+        </div>
+        <i onclick="closeSidebar()" class="fa fa-times" id="sidebarIcon" aria-hidden="true"></i>
+      </div>
+
+      <div class="sidebar__menu">
+        <div class="sidebar__link active_menu_link">
+          <i class="fa fa-user-secret" aria-hidden="true"></i>
+          <a href="#">Dashboard</a>
+        </div>
+        <div class="sidebar__link">
+          <i class="fa fa-list-alt" aria-hidden="true"></i>
+          <a href="#">Batch Status(All Forms)</a>
+        </div>
+        <div class="sidebar__link">
+          <i class="fa fa-bus" aria-hidden="true"></i>
+          <a href="#">Fleet</a>
+        </div>
+        <div class="sidebar__link">
+          <i class="fa fa-archive"></i>
+          <a href="#">Cargo Planning</a>
+        </div>
+        <div class="sidebar__link">
+          <i class="fa fa-calculator" aria-hidden="true"></i>
+          <a href="#">Chartering</a>
+        </div>
+        <div class="sidebar__link">
+          <i class="fa fa-cogs" aria-hidden="true"></i>
+          <a href="#">Operations</a>
+        </div>
+        <div class="sidebar__link">
+          <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+          <a href="#">Procure to Pay</a>
+        </div>
+        <div class="sidebar__link">
+          <i class="fa fa-comments" aria-hidden="true"></i>
+          <a href="#">F&A</a>
+        </div>
+        <div class="sidebar__link">
+          <i class="fa fa-usd" aria-hidden="true"></i>
+          <a href="#">Order to Cash</a>
+        </div>
+        <div class="sidebar__link">
+          <i class="fa fa-file-text-o" aria-hidden="true"></i>
+          <a href="#">Disp & Dern</a>
+        </div>
+        <div class="sidebar__link">
+          <i class="fa fa-file-text-o" aria-hidden="true"></i>
+          <a href="#">Reports</a>
+        </div>
+        <div class="sidebar__link">
+          <i class="fa fa-list-alt" aria-hidden="true"></i>
+          <a href="#">DMS</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript" language="javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  <script type="text/javascript" language="javascript"
+    src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
